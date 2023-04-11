@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Corm;
+    src: url(../font/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: CormBold;
+    src: url(../font/CormorantGaramond-Bold.ttf);
+}
+
+:root {
+    --maincolor1: #333;
+    --maincolor2: rgb(233, 233, 224);
+    --mainmargin: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+html {
+    font-family: Corm, sans-serif;
+    font-size: 62.5%;
+    background-color: var(--maincolor2);
+    padding: 0 5vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: CormBold, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: var(--mainmargin);
+}
+
+h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: var(--mainmargin);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin-bottom: var(--mainmargin);
+}
+
+h5 {
+    font-size: 4.5rem;
+}
+
+a {
+    color: var(--maincolor1);
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+header div p {
+    font-size: 1.8rem;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 1rem 0 0 0;
+    margin-bottom: var(--mainmargin);
+}
+
+header div {
+    border-top: double 4px black;
+    border-bottom: double 4px black;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    height: 100vh;
+}
+
+section {
+    width: 70vw;
+}
+
+section article {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+    gap: 2rem;
+}
+
+article .dangerous {
+    grid-column: 3 / 5;
+    grid-row: 1 / 7;
+}
+
+article .shattering {
+    grid-row: 1 / 2;
+}
+
+article .microwave {
+    grid-row: 1 / 2;
+}
+
+article .knife {
+    grid-row: 2 / 4;
+}
+
+article .fire {
+    grid-row: 2 / 4;
+}
+
+article .burns {
+    grid-row: 4 / 7;
+}
+
+article .pathogens {
+    grid-row: 4 / 7;
+}
+
+
+/* ASIDE */
+
+aside {
+    width: 20vw;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+aside article {
+    border: 3px double black;
+    margin-bottom: var(--mainmargin);
+    height: 25%;
+    padding: 1.5rem;
+}
+
+aside article img {
+    height: 100%;
+    filter: grayscale(100%);
+}
