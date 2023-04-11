@@ -147,6 +147,7 @@ aside article {
     margin-bottom: var(--mainmargin);
     height: 25%;
     padding: 1.5rem;
+    overflow: hidden;
 }
 
 aside article img {
